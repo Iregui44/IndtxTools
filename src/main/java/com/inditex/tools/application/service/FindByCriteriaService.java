@@ -4,11 +4,13 @@ import com.inditex.tools.application.port.IFindByCriteriaPort;
 import com.inditex.tools.application.query.FindByCriteriaQuery;
 import com.inditex.tools.domain.model.Product;
 import com.inditex.tools.domain.repository.ProductRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class FindByCriteriaService implements IFindByCriteriaPort {
     private ProductRepository productRepository;
 

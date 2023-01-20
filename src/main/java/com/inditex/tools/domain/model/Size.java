@@ -1,25 +1,15 @@
 package com.inditex.tools.domain.model;
 
 public class Size {
-    private Long id;
     private String name;
     private int quantity;
 
-    public Size(Long id, String name, int quantity) {
-        this.id = id;
+    public Size(String name, int quantity) {
         this.name = name;
         this.quantity = quantity;
     }
 
     public Size() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {
